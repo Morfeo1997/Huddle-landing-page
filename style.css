@@ -1,0 +1,397 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	flex-direction: column;
+	font-family:  'open sans' ,sans-serif;
+
+}
+
+.nav-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 2em;
+}
+
+.nav-container > img{
+	width: 18vw;
+	height: 7vh;
+}
+
+.nav-container > button{
+	padding: 0.2em 2em;
+	color: hsl(322, 100%, 66%);
+	background-color: white;
+	border: solid hsl(322, 100%, 66%) 1px;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.nav-container > button:hover{
+	color: hsl(321, 100%, 78%);
+	border: solid hsl(321, 100%, 78%) 1px;
+}
+
+.header-container{
+	text-align: center;
+	margin: 4vh 10vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header-container > h1{
+	color: hsl(192, 100%, 9%);
+	font-family: 'poppins', sans-serif;
+}
+
+.header-container > p{
+	margin: 1em 14em;
+	color: hsl(192, 100%, 9%);
+}
+
+.btn{
+	padding: 1.5em 6em;
+	margin: 2em 0;
+	align-self: center;
+	border-radius: 25px;
+	background-color: hsl(322, 100%, 66%);
+	color: white;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btn:hover{
+	background-color: hsl(321, 100%, 78%);
+}
+
+
+.presentation-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	align-self: center;
+}
+
+.presentation-container > img{
+	width: 100%;
+}
+
+.info-container{
+	margin: 2em 4em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.communities > h3, .messages > h3{
+	font-family: 'poppins', sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+	color: hsl(192, 100%, 9%);
+	margin: 0;
+}
+
+
+
+.grow-container, .flowing-container, .your-users-container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+
+}
+
+.grow-container, .your-users-container{
+	background-color: hsl(207, 100%, 98%);
+}
+
+.background-top-top{
+	background-image: url(images/bg-section-top-desktop-1.svg);
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 25vh;
+}
+
+.background-top-bottom{
+	background-image: url(images/bg-section-bottom-desktop-1.svg);
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 25vh;
+}
+
+.background-bottom-top{
+	background-image: url(images/bg-section-top-desktop-2.svg);
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 25vh;
+}
+
+.background-bottom-bottom{
+	background-image: url(images/bg-section-bottom-desktop-2.svg);
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 25vh;
+}
+
+.grow, .flowing, .your-users{
+	width: 50%;
+	color: hsl(192, 100%, 9%);
+	padding: 4em 6em;
+	align-items: center;
+}
+
+.grow > h2, .flowing > h2, .your-users > h2{
+	font-weight: bold;
+	font-family: 'poppins', sans-serif;
+}
+
+
+.grow-image, .flowing-image, .your-users-image{
+	width: 50%;
+	height: 90%;
+	padding: 2em 4em;
+}
+
+.grow-image > img, .flowing-image > img, .your-users-image > img{
+	width: 100%;
+}
+
+.final-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2em 0;
+}
+
+.final-section > h2{
+	color: hsl(192, 100%, 9%);
+	font-family: 'poppins', sans-serif;
+}
+
+.img-bottom{
+	height: 25vh;
+	background-image: url(images/bg-footer-top-desktop.svg);
+	background-repeat: no-repeat;
+	width: 100vw;
+}
+
+.contact-container {
+	background-color: hsl(192, 100%, 9%);
+	width: 100vw;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.contact > img{
+	height: 8vh;
+	width: 20vw;
+}
+
+.contact, .subscription-container{
+	display: flex;
+	flex-direction: column;
+	padding: 2em 4em 2em 8em;
+}
+
+.contact-info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.bottom-logos{
+	width: 1em;
+	height: 1em;
+	margin: 1em 1em 1em 0;
+}
+
+.subscription{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.email{
+	padding: 0.7em 2em;
+	margin: 1em 1em 1em 0;
+	border-radius: 5px;
+	border: none;
+}
+
+.subscribe-btn{
+	padding: 0.7em 2em;
+	background-color: hsl(322, 100%, 66%);
+	margin: 1em;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.subscribe-btn:hover{
+	background-color: hsl(321, 100%, 78%);
+}
+
+.credits > p > a{
+	color: hsl(322, 100%, 66%);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.credits > p > a:hover{
+	color: hsl(0, 100%, 63%);
+}
+
+
+@media screen and (max-width: 375px){
+	body{
+		min-width: ;
+	}
+
+	.nav-container > img{
+		width: 25vw;
+		height: 3vh;
+	}
+
+	.nav-container > button{
+		width: 30vw;
+		height: 5vh;
+		font-size: 12px;
+	}
+
+
+	.header-container{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 2em 0;
+	}
+
+	.header-container > p{
+		margin: 0;
+	}
+
+	.info-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		align-self: center;
+		margin: 2em 0;
+		padding: 0;
+
+	}
+
+
+	.grow-container, .flowing-container, .your-users-container{
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100%;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	}
+
+	.grow, .flowing, .your-users{
+	width: 50%;
+	padding: 0;
+	align-items: center;
+	}
+
+	.grow-image, .flowing-image , .your-users-image{
+		height: 50%;
+		width: 100%;
+	} 
+
+
+	.grow-image > img, .flowing-image > img, .your-users-image > img{
+	height: 100%;
+	width: 100%;
+	}
+
+	.final-section{
+		text-align: center;
+	}
+
+	.contact-container{
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: flex-start;
+		padding: 1em;
+	}
+
+	.contact{
+		font-weight: bold;
+		margin: 2em 0 0 0;
+	}
+
+
+	.contact > img{
+	height: 9vh;
+	width: 60vw;
+}
+
+	.contact, .subscription-container{
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.contact-info{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.subscription{
+		display: flex;
+		flex-direction: column;
+	}
+
+	
+
+
+	.background-top-top{
+		background-image: url(images/bg-section-top-mobile-1.svg);
+		height: 16vh;
+	}
+
+	.background-top-bottom{
+		background-image: url(images/bg-section-bottom-mobile-1.svg);
+		height: 16vh;
+	}
+
+
+	.background-bottom-top{
+		background-image: url(images/bg-section-top-mobile-2.svg);
+		height: 16vh;
+	}
+
+	.background-bottom-bottom{
+		background-image: url(images/bg-section-bottom-mobile-2.svg);
+		height: 16vh;
+	}
+
+
+	.img-bottom{
+		background-image: url(images/bg-footer-top-mobile.svg);
+		height: 8vh;
+		width: 100%;
+	}
+}	
