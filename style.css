@@ -102,7 +102,7 @@ body{
 
 
 
-.grow-container, .flowing-container, .your-users-container{
+.grow-container, .your-users-container{
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -113,37 +113,29 @@ body{
 
 }
 
+.flowing-container{
+	display: flex;
+	flex-direction: row-reverse;
+	width: 100%;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
 .grow-container, .your-users-container{
 	background-color: hsl(207, 100%, 98%);
 }
 
-.background-top-top{
-	background-image: url(images/bg-section-top-desktop-1.svg);
-	background-repeat: no-repeat;
-	width: 100vw;
-	height: 25vh;
+.background-top-desktop, .background-bottom-desktop{
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
 }
 
-.background-top-bottom{
-	background-image: url(images/bg-section-bottom-desktop-1.svg);
-	background-repeat: no-repeat;
-	width: 100vw;
-	height: 25vh;
+.background-top-mobile, .background-bottom-mobile{
+	display: none;
 }
 
-.background-bottom-top{
-	background-image: url(images/bg-section-top-desktop-2.svg);
-	background-repeat: no-repeat;
-	width: 100vw;
-	height: 25vh;
-}
-
-.background-bottom-bottom{
-	background-image: url(images/bg-section-bottom-desktop-2.svg);
-	background-repeat: no-repeat;
-	width: 100vw;
-	height: 25vh;
-}
 
 .grow, .flowing, .your-users{
 	width: 50%;
@@ -196,9 +188,9 @@ body{
 	justify-content: space-around;
 }
 
-.contact > img{
-	height: 8vh;
-	width: 20vw;
+.bottom-logo{
+	width: 50%;
+	height: 25%;
 }
 
 .contact, .subscription-container{
@@ -212,6 +204,7 @@ body{
 	flex-direction: row;
 	align-items: center;
 }
+
 
 .bottom-logos{
 	width: 1em;
@@ -341,11 +334,11 @@ body{
 		margin: 2em 0 0 0;
 	}
 
+	.bottom-logo{
+		width: 40%;
+		height: 20%;
+	}
 
-	.contact > img{
-	height: 9vh;
-	width: 60vw;
-}
 
 	.contact, .subscription-container{
 		display: flex;
@@ -365,33 +358,15 @@ body{
 	}
 
 	
-
-
-	.background-top-top{
-		background-image: url(images/bg-section-top-mobile-1.svg);
-		height: 16vh;
+	.background-top-desktop, .background-bottom-desktop{
+		display: none;
 	}
 
-	.background-top-bottom{
-		background-image: url(images/bg-section-bottom-mobile-1.svg);
-		height: 16vh;
-	}
-
-
-	.background-bottom-top{
-		background-image: url(images/bg-section-top-mobile-2.svg);
-		height: 16vh;
-	}
-
-	.background-bottom-bottom{
-		background-image: url(images/bg-section-bottom-mobile-2.svg);
-		height: 16vh;
-	}
-
-
-	.img-bottom{
-		background-image: url(images/bg-footer-top-mobile.svg);
-		height: 8vh;
+	.background-top-mobile, .background-bottom-mobile{
+		display: block;
 		width: 100%;
-	}
+		overflow: hidden;
+		margin: 0;
+}
+
 }	
