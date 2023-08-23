@@ -8,7 +8,8 @@ body{
 	display: flex;
 	flex-direction: column;
 	font-family:  'open sans' ,sans-serif;
-
+	padding: 0;
+	margin: 0;
 }
 
 .nav-container{
@@ -246,10 +247,8 @@ body{
 }
 
 
-@media screen and (max-width: 375px){
-	body{
-		min-width: ;
-	}
+@media screen and (max-width: 675px){
+	
 
 	.nav-container > img{
 		width: 25vw;
